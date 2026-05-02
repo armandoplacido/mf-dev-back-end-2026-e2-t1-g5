@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "LhGiZsMj+Ek=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Armando\\Developer\\Projetos\\mf-dev-back-end-2026-e2-t1-g5\\mf-dev-back-end-2026-e2-t1-g5\\mf-dev-back-end-2026-e2-t1-g5.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Armando\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Armando\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\10.0.7\\microsoft.aspnetcore.mvc.razor.runtimecompilation.10.0.7.nupkg.sha512",
+    "C:\\Users\\Armando\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
+    "C:\\Users\\Armando\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.2\\microsoft.codeanalysis.analyzers.3.3.2.nupkg.sha512",
+    "C:\\Users\\Armando\\.nuget\\packages\\microsoft.codeanalysis.common\\4.0.0\\microsoft.codeanalysis.common.4.0.0.nupkg.sha512",
+    "C:\\Users\\Armando\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.0.0\\microsoft.codeanalysis.csharp.4.0.0.nupkg.sha512",
+    "C:\\Users\\Armando\\.nuget\\packages\\microsoft.codeanalysis.razor\\6.0.0\\microsoft.codeanalysis.razor.6.0.0.nupkg.sha512",
+    "C:\\Users\\Armando\\.nuget\\packages\\microsoft.extensions.dependencymodel\\10.0.7\\microsoft.extensions.dependencymodel.10.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}
