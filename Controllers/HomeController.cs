@@ -1,6 +1,6 @@
 using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
 using mf_dev_back_end_2026_e2_t1_g5.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace mf_dev_back_end_2026_e2_t1_g5.Controllers;
 
@@ -8,7 +8,7 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        return View();
+        return RedirectToAction("Index", "Veiculos");
     }
 
     public IActionResult Privacy()
