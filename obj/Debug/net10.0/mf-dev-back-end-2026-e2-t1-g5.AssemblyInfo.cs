@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mf-dev-back-end-2026-e2-t1-g5")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9d50ae76cec4f110a25009eefe2db2d0fccb762")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60d63feb7e870c5a1c3e48ec077658a0e7202690")]
 [assembly: System.Reflection.AssemblyProductAttribute("mf-dev-back-end-2026-e2-t1-g5")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mf-dev-back-end-2026-e2-t1-g5")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
