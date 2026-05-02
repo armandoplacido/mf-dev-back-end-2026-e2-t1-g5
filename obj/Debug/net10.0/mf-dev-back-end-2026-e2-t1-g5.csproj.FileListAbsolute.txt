@@ -534,3 +534,4 @@ C:\Users\Armando\Developer\Projetos\mf-dev-back-end-2026-e2-t1-g5\mf-dev-back-en
 C:\Users\Armando\Developer\Projetos\mf-dev-back-end-2026-e2-t1-g5\mf-dev-back-end-2026-e2-t1-g5\obj\Debug\net10.0\mf-dev-back-end-2026-e2-t1-g5.pdb
 C:\Users\Armando\Developer\Projetos\mf-dev-back-end-2026-e2-t1-g5\mf-dev-back-end-2026-e2-t1-g5\obj\Debug\net10.0\mf-dev-back-end-2026-e2-t1-g5.genruntimeconfig.cache
 C:\Users\Armando\Developer\Projetos\mf-dev-back-end-2026-e2-t1-g5\mf-dev-back-end-2026-e2-t1-g5\obj\Debug\net10.0\ref\mf-dev-back-end-2026-e2-t1-g5.dll
+C:\Users\Armando\Developer\Projetos\mf-dev-back-end-2026-e2-t1-g5\mf-dev-back-end-2026-e2-t1-g5\bin\Debug\net10.0\BCrypt.Net-Next.dll

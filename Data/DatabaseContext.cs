@@ -11,6 +11,7 @@ public class DatabaseContext : DbContext
 
     public DbSet<Veiculo> Veiculos { get; set; }
     public DbSet<Consumo> Consumos { get; set; }
+    public DbSet<Usuario> Usuarios { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -23,6 +24,10 @@ public class DatabaseContext : DbContext
 
         modelBuilder.Entity<Consumo>()
             .HasIndex(c => c.PublicId)
+            .IsUnique();
+
+        modelBuilder.Entity<Usuario>()
+            .HasIndex(u => u.PublicId)
             .IsUnique();
     }
 }

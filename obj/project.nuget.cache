@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+NKoq4kyzTE=",
+  "dgSpecHash": "zeJKG3RgbQY=",
   "success": true,
   "projectFilePath": "C:\\Users\\Armando\\Developer\\Projetos\\mf-dev-back-end-2026-e2-t1-g5\\mf-dev-back-end-2026-e2-t1-g5\\mf-dev-back-end-2026-e2-t1-g5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Armando\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\Armando\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
+    "C:\\Users\\Armando\\.nuget\\packages\\bcrypt.net-next\\4.1.0\\bcrypt.net-next.4.1.0.nupkg.sha512",
     "C:\\Users\\Armando\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Armando\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Armando\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\10.0.7\\microsoft.aspnetcore.mvc.razor.runtimecompilation.10.0.7.nupkg.sha512",

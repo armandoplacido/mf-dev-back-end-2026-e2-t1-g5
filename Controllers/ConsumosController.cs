@@ -1,11 +1,13 @@
 using mf_dev_back_end_2026_e2_t1_g5.Data;
 using mf_dev_back_end_2026_e2_t1_g5.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace mf_dev_back_end_2026_e2_t1_g5.Controllers;
 
+[Authorize]
 public class ConsumosController : Controller
 {
     private readonly DatabaseContext _databaseContext;
