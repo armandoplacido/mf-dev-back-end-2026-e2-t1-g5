@@ -41,4 +41,54 @@ public class VeiculosController : Controller
 
         return RedirectToAction("Index");
     }
+
+    public async Task<IActionResult> Edit(Guid? publicId)
+    {
+        if (publicId == Guid.Empty)
+            return NotFound();
+
+        var veiculo = await _databaseContext.Veiculos
+            .FirstOrDefaultAsync(v => v.PublicId == publicId);
+
+        if (veiculo == null)
+            return NotFound();
+
+        return View(veiculo);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Edit(Guid publicId, Veiculo veiculo)
+    {
+        var veiculoDb = await _databaseContext.Veiculos
+            .FirstOrDefaultAsync(v => v.PublicId == publicId);
+
+        if (veiculoDb == null)
+            return NotFound();
+
+        veiculoDb.Nome = veiculo.Nome;
+        veiculoDb.Placa = veiculo.Placa;
+        veiculoDb.AnoFabricacao = veiculo.AnoFabricacao;
+        veiculoDb.AnoModelo = veiculo.AnoModelo;
+
+        await _databaseContext.SaveChangesAsync();
+
+        return RedirectToAction("Index");
+    }
+
+    public async Task<IActionResult> Details(Guid? publicId)
+    {
+        if (publicId == Guid.Empty)
+            return NotFound();
+
+        var veiculo = await _databaseContext.Veiculos.FirstOrDefaultAsync(v => v.PublicId == publicId);
+
+        if (veiculo == null)
+            return NotFound();
+
+        return View(veiculo);
+    }
+
+    // public Task<IActionResult> Delete(Guid? publicId)
+    // {
+    // }
 }

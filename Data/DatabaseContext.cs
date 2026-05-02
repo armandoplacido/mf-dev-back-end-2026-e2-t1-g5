@@ -10,4 +10,14 @@ public class DatabaseContext : DbContext
     }
 
     public DbSet<Veiculo> Veiculos { get; set; }
+
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<Veiculo>()
+            .HasIndex(v => v.PublicId)
+            .IsUnique();
+    }
 }
