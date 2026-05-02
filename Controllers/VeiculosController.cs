@@ -88,7 +88,34 @@ public class VeiculosController : Controller
         return View(veiculo);
     }
 
-    // public Task<IActionResult> Delete(Guid? publicId)
-    // {
-    // }
+    public async Task<IActionResult> Delete(Guid? publicId)
+    {
+        if (publicId == Guid.Empty)
+            return NotFound();
+
+        var veiculo = await _databaseContext.Veiculos
+            .FirstOrDefaultAsync(v => v.PublicId == publicId);
+
+        if (veiculo == null)
+            return NotFound();
+
+        return View(veiculo);
+    }
+
+    [HttpPost]
+    [ActionName("Delete")]
+    public async Task<IActionResult> Deleteconfirmed(Guid? publicId)
+    {
+        if (publicId == Guid.Empty)
+            return NotFound();
+
+        var veiculo = await _databaseContext.Veiculos.FirstOrDefaultAsync(v => v.PublicId == publicId);
+
+        if (veiculo == null) return NotFound();
+
+        _databaseContext.Veiculos.Remove(veiculo);
+        await _databaseContext.SaveChangesAsync();
+
+        return RedirectToAction("Index");
+    }
 }
