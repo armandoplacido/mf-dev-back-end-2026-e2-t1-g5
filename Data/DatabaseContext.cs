@@ -10,6 +10,7 @@ public class DatabaseContext : DbContext
     }
 
     public DbSet<Veiculo> Veiculos { get; set; }
+    public DbSet<Consumo> Consumos { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
