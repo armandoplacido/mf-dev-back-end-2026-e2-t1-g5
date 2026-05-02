@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace mf_dev_back_end_2026_e2_t1_g5.Models;
 
@@ -8,11 +9,13 @@ public class Consumo
 {
     [Key] public int Id { get; set; }
 
+    [Required] public Guid PublicId { get; set; } = Guid.NewGuid();
+
     [Required(ErrorMessage = "Obrigatório Informar a descrição")]
     [Display(Name = "Descrição")]
     public string Descricao { get; set; }
 
-    [Required(ErrorMessage = "Obrigatório Informar a descrição")]
+    [Required(ErrorMessage = "Obrigatório Informar uma data")]
     public DateTime Data { get; set; }
 
     [Required(ErrorMessage = "Obrigatório Informar o valor")]
@@ -28,7 +31,9 @@ public class Consumo
     [Required(ErrorMessage = "Obrigatório Informar o veículo")]
     public int VeiculoId { get; set; }
 
-    [ForeignKey("VeiculoId")] public Veiculo Veiculo { get; set; }
+    [ForeignKey("VeiculoId")]
+    [ValidateNever]
+    public Veiculo Veiculo { get; set; }
 }
 
 public enum TipoCombustivel

@@ -33,7 +33,7 @@
     {
         <tr>
             <td>
-                <a asp-action="Relatorio" asp-route-id="@item.Id">@item.Nome</a>
+                <a asp-action="Relatorio" asp-route-publicId="@item.PublicId">@item.Nome</a>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Placa)

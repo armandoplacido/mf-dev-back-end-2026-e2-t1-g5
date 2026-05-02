@@ -24,5 +24,5 @@ public class Veiculo
     [Display(Name = "Ano do modelo")]
     public int AnoModelo { get; set; }
 
-    public ICollection<Consumo> Consumos { get; set; }
+    public ICollection<Consumo> Consumos { get; set; } = new List<Consumo>();
 }

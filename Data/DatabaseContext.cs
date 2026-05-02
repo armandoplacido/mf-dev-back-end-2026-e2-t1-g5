@@ -20,5 +20,9 @@ public class DatabaseContext : DbContext
         modelBuilder.Entity<Veiculo>()
             .HasIndex(v => v.PublicId)
             .IsUnique();
+
+        modelBuilder.Entity<Consumo>()
+            .HasIndex(c => c.PublicId)
+            .IsUnique();
     }
 }
